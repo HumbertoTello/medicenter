@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  height: 120px;
+  justify-content: center;
+}
+
+.container {
+  width: 990px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+ul a {
+  display: block;
+  text-decoration: none;
+  color: #727272;
+  margin: 0;
+  padding: 16px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+ul .active,
+ul a:hover {
+  background-color: #39aae1;
+  color: white;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  height: 670px;
+  background-image: url(../images/img1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.banner_headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.banner_headline h1 {
+  color: white;
+  font-size: 72px;
+  font-family: 'PT Sans';
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+}
+
+.banner_headline h2 {
+  color: white;
+  margin-top: 19px;
+  font-size: 24px;
+  font-family: 'PT Sans';
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.5)
+}
+
+.banner_options {
+  display: flex;
+  height: 210px;
+}
+
+.banner1 {
+  background-color: #42b3e5;
+  display: flex;
+  flex-direction: column;
+  padding: 21px 30px 30px 30px;
+  flex: 1;
+}
+
+.banner2 {
+  background-color: #0384ce;
+  display: flex;
+  flex-direction: column;
+  padding: 21px 30px 30px 30px;
+  flex: 1;
+}
+
+.banner3 {
+  background-color: #3156a3;
+  display: flex;
+  flex-direction: column;
+  padding: 21px 30px 30px 30px;
+  flex: 1;
+}
+
+.banner_title {
+  margin-bottom: 12px;
+  color: white;
+  font-size: 24px;
+  font-family: 'PT Sans';
+}
+
+.banner_description {
+  color: white;
+  font-size: 13px;
+  font-family: 'Arial';
+}
+
+.read_more {
+  display: block;
+  width: fit-content;
+  margin-top: 25px;
+  color: white;
+  font-size: 13px;
+  font-family: 'Arial';
+  text-decoration: none;
+  padding: 8px;
+  border: 1px solid white;
+}
+
+ul span,
+.value {
+  color: white;
+  font-size: 13px;
+  font-family: 'Arial';
+}
+
+.banner_options ul {
+  margin: 0;
+  padding: 0;
+}
+
+.banner_options ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid white;
+}
