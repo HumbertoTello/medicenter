@@ -9,6 +9,10 @@ header {
   justify-content: center;
 }
 
+header .menu_mobile {
+  display: none;
+}
+
 .container {
   width: 990px;
   display: flex;
@@ -48,7 +52,7 @@ header ul a:hover {
 #banner {
   display: flex;
   justify-content: center;
-  height: 670px;
+  height: auto;
   background-image: url(../images/img1.jpg);
   background-position: center;
   background-size: cover;
@@ -147,14 +151,14 @@ ul span,
 }
 
 .banner_options ul {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner_options ul li {
   display: flex;
   justify-content: space-between;
-  padding: 12px 0;
+  padding: 12px 0px;
   border-bottom: 1px solid white;
 }
 
@@ -373,4 +377,100 @@ footer .copyright {
   padding: 15px 0;
   border-top: 1px solid #353535;
   font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  #banner h1 {
+    font-size: 56px;
+    padding-left: 16px;
+  }
+
+  #banner h2 {
+    font-size: 24px;
+    padding-left: 16px;
+  }
+
+  #banner .container .banner_options{
+    flex-direction: column;
+  }
+
+  #banner .banner_title {
+    font-size: 16px;
+  }
+
+  .banner1, .banner2, .banner3 {
+    flex: none;
+  }
+
+  #banner .banner_description {
+    font-size: 12px;
+  }
+
+  #banner .value,
+  #banner .banner3 span {
+    font-size: 9px;
+  }
+
+  #banner .banner_options {
+    height: auto;
+  }
+
+  #geral .container {
+    flex-direction: column;
+  }
+
+  #geral .widget_body, 
+  #geral .widget_title {
+    padding-left: 16px;
+    justify-content: center;
+    padding-right: 16px;
+  }
+
+  #geral .widget_contact {
+    padding-left: 16px;
+  }
+
+  footer .footer_content {
+    padding-left: 16px;
+  }
+
+  footer .copyright {
+    padding-left: 16px;
+  }
+
+  header {
+    height: auto;
+  }
+
+  header .menu nav ul{
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #FFF;
+  }
+
+  header .logo {
+    padding: 32px 16px;
+  }
+
+  header .menu_mobile {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 16px 0;
+    padding-right: 16px;
+    height: 30px;
+  }
+
+  header .menu_mobile:hover {
+    cursor: pointer;
+  }
+
+  header .menu_linha {
+    width: 30px;
+    height: 3px;
+    background-color: #42b3e5;
+  }
 }

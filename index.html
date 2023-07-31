@@ -11,6 +11,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/javascript">
+      window.onload = function(){
+        document.querySelector(".menu_mobile").addEventListener("click", function(){
+          if(document.querySelector(".menu nav ul").style.display == 'flex') {
+            document.querySelector(".menu nav ul").style.display = 'none';
+          } else {
+            document.querySelector(".menu nav ul").style.display = 'flex';
+          }
+        });
+      }
+    </script>
   </head>
   <html>
     <body>
@@ -21,6 +32,11 @@
           </div>
           <div class="menu">
             <nav>
+              <div class="menu_mobile">
+                <div class="menu_linha"></div>
+                <div class="menu_linha"></div>
+                <div class="menu_linha"></div>
+              </div>
               <ul>
                 <a href="" class="active"><li>home</li></a>
                 <a href=""><li>blog</li></a>
